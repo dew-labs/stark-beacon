@@ -8,7 +8,7 @@ const pool = new Pool({
   connectionString: config.DATABASE_URL,
 });
 
-const orm = drizzle(pool, { schema, logger: true, casing: "snake_case" });
+const orm = drizzle(pool, { schema, logger: true });
 
 export type Orm = typeof orm;
 
