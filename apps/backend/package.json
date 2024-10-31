@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
+    "sepolia:seed": "MISE_ENV=sepolia mise x -- bun run src/seed.ts",
     "sepolia:dev": "MISE_ENV=sepolia mise x -- bun run dev"
   },
   "dependencies": {
